@@ -1,0 +1,170 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "id": "county-1",
+      "type": "Feature",
+      "properties": {
+        "name": "Nairobi",
+        "population": 4397073,
+        "code": "047"
+      },
+      "path": "M500,400 L520,410 L535,405 L540,420 L530,430 L510,435 L490,425 L495,410 Z",
+      "centroid": [510, 420]
+    },
+    {
+      "id": "county-2",
+      "type": "Feature",
+      "properties": {
+        "name": "Mombasa",
+        "population": 1208333,
+        "code": "001"
+      },
+      "path": "M650,600 L670,605 L675,625 L660,635 L645,630 L640,615 Z",
+      "centroid": [655, 618]
+    },
+    {
+      "id": "county-3",
+      "type": "Feature",
+      "properties": {
+        "name": "Kisumu",
+        "population": 1155574,
+        "code": "042"
+      },
+      "path": "M350,450 L370,445 L380,460 L375,475 L360,480 L345,470 Z",
+      "centroid": [363, 463]
+    },
+    {
+      "id": "county-4",
+      "type": "Feature",
+      "properties": {
+        "name": "Nakuru",
+        "population": 2162202,
+        "code": "032"
+      },
+      "path": "M450,380 L480,375 L490,395 L485,415 L465,425 L440,415 L445,390 Z",
+      "centroid": [465, 400]
+    },
+    {
+      "id": "county-5",
+      "type": "Feature",
+      "properties": {
+        "name": "Uasin Gishu",
+        "population": 1163186,
+        "code": "027"
+      },
+      "path": "M400,350 L425,345 L440,360 L435,380 L415,385 L395,375 Z",
+      "centroid": [418, 362]
+    },
+    {
+      "id": "county-6",
+      "type": "Feature",
+      "properties": {
+        "name": "Kiambu",
+        "population": 2417735,
+        "code": "022"
+      },
+      "path": "M485,370 L505,365 L520,380 L515,400 L495,405 L480,395 Z",
+      "centroid": [500, 385]
+    },
+    {
+      "id": "county-7",
+      "type": "Feature",
+      "properties": {
+        "name": "Machakos",
+        "population": 1421932,
+        "code": "016"
+      },
+      "path": "M520,430 L545,425 L560,440 L555,460 L535,465 L515,455 Z",
+      "centroid": [538, 445]
+    },
+    {
+      "id": "county-8",
+      "type": "Feature",
+      "properties": {
+        "name": "Kajiado",
+        "population": 1117840,
+        "code": "034"
+      },
+      "path": "M470,430 L500,425 L515,440 L510,465 L480,470 L465,455 Z",
+      "centroid": [490, 447]
+    },
+    {
+      "id": "county-9",
+      "type": "Feature",
+      "properties": {
+        "name": "Kilifi",
+        "population": 1453787,
+        "code": "003"
+      },
+      "path": "M620,580 L645,575 L655,590 L650,610 L630,615 L615,600 Z",
+      "centroid": [635, 595]
+    },
+    {
+      "id": "county-10",
+      "type": "Feature",
+      "properties": {
+        "name": "Kwale",
+        "population": 866820,
+        "code": "002"
+      },
+      "path": "M630,620 L650,615 L660,630 L655,650 L635,655 L625,640 Z",
+      "centroid": [642, 635]
+    },
+    {
+      "id": "county-11",
+      "type": "Feature",
+      "properties": {
+        "name": "Garissa",
+        "population": 841353,
+        "code": "007"
+      },
+      "path": "M600,500 L650,490 L670,510 L665,540 L615,550 L595,530 Z",
+      "centroid": [632, 520]
+    },
+    {
+      "id": "county-12",
+      "type": "Feature",
+      "properties": {
+        "name": "Turkana",
+        "population": 926976,
+        "code": "023"
+      },
+      "path": "M350,250 L400,240 L420,260 L415,290 L365,300 L345,280 Z",
+      "centroid": [382, 270]
+    },
+    {
+      "id": "county-13",
+      "type": "Feature",
+      "properties": {
+        "name": "Marsabit",
+        "population": 459785,
+        "code": "010"
+      },
+      "path": "M450,250 L500,240 L520,260 L515,290 L465,300 L445,280 Z",
+      "centroid": [482, 270]
+    },
+    {
+      "id": "county-14",
+      "type": "Feature",
+      "properties": {
+        "name": "Wajir",
+        "population": 781263,
+        "code": "008"
+      },
+      "path": "M550,300 L600,290 L620,310 L615,340 L565,350 L545,330 Z",
+      "centroid": [582, 320]
+    },
+    {
+      "id": "county-15",
+      "type": "Feature",
+      "properties": {
+        "name": "Mandera",
+        "population": 867457,
+        "code": "009"
+      },
+      "path": "M620,250 L670,240 L690,260 L685,290 L635,300 L615,280 Z",
+      "centroid": [652, 270]
+    }
+  ]
+}
