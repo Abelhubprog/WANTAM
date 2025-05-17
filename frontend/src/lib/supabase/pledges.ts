@@ -5,6 +5,7 @@ import supabase, { handleSupabaseError } from '../supabase/client';
 import { logger } from '../utils/logger';
 
 /**
+<<<<<<< HEAD
  * Fetch pledge counts by county for the heatmap visualization
  * @returns Array of counties with pledge counts
  */
@@ -32,6 +33,8 @@ export async function getCountyCounts(forceRefresh?: boolean): Promise<County[]>
 }
 
 /**
+=======
+>>>>>>> origin/main
  * County interface for heatmap data
  */
 export interface County {
@@ -239,6 +242,7 @@ export async function getRecentPledges(limit: number = 10): Promise<Pledge[]> {
  */
 export async function getTotalPledgeCount(): Promise<number> {
   try {
+<<<<<<< HEAD
     const result = await supabase
       .from('pledges')
       .select('*');
@@ -249,6 +253,17 @@ export async function getTotalPledgeCount(): Promise<number> {
     }
     
     return result.count || 0;
+=======
+    const { count, error } = await supabase
+      .from('pledges')
+      .select('*', { count: 'exact', head: true });
+    
+    if (error) {
+      throw error;
+    }
+    
+    return count || 0;
+>>>>>>> origin/main
   } catch (error) {
     logger.error('Error getting total pledge count:', error);
     throw new Error(handleSupabaseError(error, 'Get total pledge count'));
@@ -284,11 +299,20 @@ export async function insertPledge(pledge: Partial<Pledge>): Promise<Pledge | nu
   try {
     const { data, error } = await supabase
       .from('pledges')
+<<<<<<< HEAD
       .insert([pledge], { returning: 'representation' })
       .single();
     
     if (error) {
       handleSupabaseError(error, 'Error inserting pledge');
+=======
+      .insert([pledge])
+      .select()
+      .single();
+    
+    if (error) {
+      throw error;
+>>>>>>> origin/main
     }
     
     return data;

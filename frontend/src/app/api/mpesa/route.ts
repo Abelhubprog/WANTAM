@@ -76,12 +76,24 @@ export async function POST(request: NextRequest) {
       );
     }
     
+<<<<<<< HEAD
     const response = await processWebhook(payload);
+=======
+    const response = await processWebhook(
+      payload,
+      supabaseUrl,
+      supabaseKey
+    );
+>>>>>>> origin/main
     
     logger.info('MPESA webhook processed successfully', { 
       requestId,
       transactionId: payload.TransID,
+<<<<<<< HEAD
       success: response.success
+=======
+      resultCode: response.ResultCode
+>>>>>>> origin/main
     });
     
     // Return the response

@@ -3,7 +3,11 @@
  * 
  * Analyzes uploaded budget PDFs and generates concise summaries
  */
+<<<<<<< HEAD
 import pdfParse from 'pdf-parse';
+=======
+import * as pdfParse from 'pdf-parse';
+>>>>>>> origin/main
 import { logger } from '@/lib/utils/logger';
 
 interface SummaryRequest {
@@ -288,7 +292,11 @@ async function summarizeChunk(chunk: string, requestId: string): Promise<string>
       
       return parts[1].trim();
     } catch (error) {
+<<<<<<< HEAD
       if (error instanceof Error && error.name === 'AbortError') {
+=======
+      if (error.name === 'AbortError') {
+>>>>>>> origin/main
         logger.warn('Hugging Face API request timed out', { requestId });
         throw new BudgetSummaryError('API request timed out');
       }
@@ -364,6 +372,7 @@ function compileSummary(summaries: string[]): { fullSummary: string, keyPoints: 
   }
   
   // Group bullets by category if possible
+<<<<<<< HEAD
   const categories: {
     totals: string[];
     allocations: string[];
@@ -371,6 +380,9 @@ function compileSummary(summaries: string[]): { fullSummary: string, keyPoints: 
     changes: string[];
     other: string[];
   } = {
+=======
+  const categories = {
+>>>>>>> origin/main
     totals: [],
     allocations: [],
     suspicious: [],

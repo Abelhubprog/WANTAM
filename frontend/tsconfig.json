@@ -6,7 +6,10 @@
       "dom.iterable",
       "esnext"
     ],
+<<<<<<< HEAD
     "types": ["node", "jest"],
+=======
+>>>>>>> origin/main
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -20,8 +23,13 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "preserve",
+<<<<<<< HEAD
     "baseUrl": ".",
     "paths": { "@/*": ["src/*"] },
+=======
+    "paths": { "@/*": ["src/*"] },
+    "types": ["node", "jest"],
+>>>>>>> origin/main
     "downlevelIteration": true
   },
   "include": [

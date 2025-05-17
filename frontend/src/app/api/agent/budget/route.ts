@@ -221,7 +221,11 @@ async function incrementRequestCount(): Promise<void> {
     // Try to update existing record
     const { error: updateError } = await supabase
       .from('api_quotas')
+<<<<<<< HEAD
       .update({ count: supabase.rpc('increment_counter', { row_count: 1 }) })
+=======
+      .update({ count: supabase.sql`count + 1` })
+>>>>>>> origin/main
       .eq('date', today)
       .eq('api', 'huggingface');
     

@@ -178,7 +178,11 @@ registerHandler('pledge', async (msg) => {
     // Count by county
     const countiesCounts: Record<string, number> = {};
     if (countiesData && countiesData.length > 0) {
+<<<<<<< HEAD
       countiesData.forEach((record: { county: string }) => {
+=======
+      countiesData.forEach(record => {
+>>>>>>> origin/main
         const county = record.county;
         countiesCounts[county] = (countiesCounts[county] || 0) + 1;
       });

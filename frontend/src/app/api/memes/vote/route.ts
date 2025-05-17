@@ -202,7 +202,11 @@ export async function POST(request: NextRequest) {
         // 2. Increment the meme's vote count
         const { error: updateError } = await supabase
           .from('meme_entries')
+<<<<<<< HEAD
           .update({ votes: supabase.rpc('increment_counter', { row_count: 1 }) })
+=======
+          .update({ votes: supabase.sql`votes + 1` })
+>>>>>>> origin/main
           .eq('id', id);
         
         if (updateError) {

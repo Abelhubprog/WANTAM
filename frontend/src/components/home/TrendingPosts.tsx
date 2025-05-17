@@ -102,7 +102,11 @@ export default function TrendingPosts() {
         <div className="text-center mt-12">
           <p className="text-white/80 mb-4">Ready to join the conversation?</p>
           <Link to="/pledge">
+<<<<<<< HEAD
             <Button variant="default" size="lg" className="bg-kenyan-red hover:bg-kenyan-red/90">
+=======
+            <Button variant="kenyan-red" size="lg" className="bg-kenyan-red">
+>>>>>>> origin/main
               Sign the Pledge
             </Button>
           </Link>

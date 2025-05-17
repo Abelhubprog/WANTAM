@@ -4,6 +4,7 @@
 import { createClient } from '@supabase/supabase-js';
 import { logger } from '../utils/logger';
 
+<<<<<<< HEAD
 /**
  * Process an incoming MPESA webhook notification
  * @param payload The webhook payload from MPESA
@@ -45,6 +46,8 @@ export async function processWebhook(payload: MPESAWebhookPayload) {
   }
 }
 
+=======
+>>>>>>> origin/main
 // Define the expected webhook payload structure
 export interface MPESAWebhookPayload {
   TransactionType: string;
